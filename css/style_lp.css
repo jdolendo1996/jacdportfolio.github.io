@@ -1,0 +1,119 @@
+body{
+  font-family: 'Lato', sans-serif;
+}
+/*ABOUT SECTION*/
+.lp-about-box{
+   background-image: url("../images/about_bg.png");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   height:100vh;
+   padding: 3vh 12vh 0vh 19vh;
+}
+  /*FOR NAVIGATIONAL BAR*/
+.bg-dark { 
+    background-color: transparent !important;  
+}
+.btn-link {
+    color: #fff;
+}
+.nav-item {
+  padding-right: 5vh;
+}
+.nav-link-end {
+  padding-right: 15vh !important;
+}
+.navbar-nav .active > .nav-link {
+     border-bottom: 5px solid #5bc0eb;
+}
+/*FOR SCROLLING*/
+.sticky {
+  background-color: #04315f!important;
+}
+/*END NAVIGATIONAL BAR*/
+.lp-about-box > .info-box {
+   text-align: left;
+   color: white;
+   padding-top: 10vh; 
+}
+.lp-about-box > .info-box > .row > .info-dtls > .title{
+   font-size: 3.5rem;
+}
+.lp-about-box > .info-box > .row > .info-dtls > .sub-title{
+   color:white;
+   font-size:18px;
+   font-family: 'Nunito', sans-serif;
+}
+#btn-cv{
+  border-radius: 2.3rem !important;
+  background-color: white;
+  color:black;
+}
+/*END ABOUT SECTION*/
+
+
+/*SKILLS SECTION*/
+.skills-box {
+  height:100vh;
+  padding: 5% 10% 5%;
+}
+
+.skills-box > .skills-info{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-content:center;
+  text-align:center;
+  text-align: justify;
+  text-justify: inter-word;
+  padding-bottom:2%;
+}
+.skills{
+  display:grid;
+  grid-gap:20px;
+  grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+  grid-template-rows: repeat(5, 1fr);
+}
+.skills .skill-type{
+  height:20vh;
+  padding: 4vh;
+  display:grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows:1fr 1fr;
+}
+.skills .skill-type > img{
+  grid-column-start: 1; 
+  grid-column-end: 2; 
+  grid-row-start: 1; 
+  grid-row-end: 3; 
+} 
+.skills .skill-type > .skill-desc{
+  align-self:end;
+  margin-bottom:1;
+  font-weight:bold;
+  text-align:right;
+}
+.skills .skill-type > .skill-desc > .skill-name{
+  float:left;
+} 
+.skills .skill-type > .skill-desc > .skill-perc{
+  float:right;
+} 
+.skills .skill-type > .skill-desc, div.progress{
+  margin-left:2%;
+}
+.skills .skill-type > div.progress{
+  height:0.5rem;
+} 
+.skills .skill-type > div.progress > .progress-bar  {
+  background-color:black !important;
+} 
+
+
+/*END SKILLS SECTION*/
+
+/*FOOTER SECTION*/
+footer{
+  height:20vh;
+}
+/*END FOOTER SECTION*/
