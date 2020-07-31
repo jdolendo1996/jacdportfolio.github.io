@@ -58,7 +58,7 @@ html, body{
 
 /*SKILLS SECTION*/
 .skills-box {
-  height:100vh;
+  height:auto;
   padding: 5% 10% 5%;
 }
 
@@ -88,6 +88,8 @@ html, body{
   grid-template-rows:1fr 1fr;
 }
 .skills .skill-type > img{
+  max-width: 100%;
+  max-height: 100%;
   grid-column-start: 1; 
   grid-column-end: 2; 
   grid-row-start: 1; 
@@ -119,26 +121,86 @@ html, body{
 /*END SKILLS SECTION*/
 
 /*FOOTER SECTION*/
+
 footer{
-  height:50vh;
-  background-color:#193b54;
   padding: 4% 10%;
-  display:flex;
-  justify-content:center;
+  color:#9b9b9b;
+}
+
+footer h5{
+  color:#ffffff;
+}
+
+footer a{
+  color:#9b9b9b !important;
 }
 
 .footer-desc {
-  width: 100%;
-  height: 100%;
-  background-color: white;
+  background-color:#193b54;
   border-radius: 5px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
 }
 
 .footer-desc:hover {
   transform: scale(1.1);
 }
 
+.footer-desc > .footer-grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+  grid-template-rows:1fr;
+  width:100%;
+  height:100%;
+}
+
+.footer-desc > .footer-grid div{
+  width:100%;
+  height:15rem;
+}
+
+.footer-desc > .footer-grid > .prof-icon{
+  text-align:center;
+}
+
+.footer-desc > .footer-grid > .prof-icon, .contact-desc, .other-desc{
+  padding: 5%;
+}
+
+.footer-desc > .footer-grid > .contact-desc:hover *, .other-desc:hover *{
+  color:#ffffff !important;
+}
+
+.footer-desc > .footer-grid > .prof-icon > img {
+  border-radius: 50%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.footer-desc > .footer-grid > .contact-desc > img {
+  border-radius: 50%;
+  max-width: 100%;
+  max-height: 2rem;
+}
+
+.footer-desc > .footer-grid > .contact-desc > a > img {
+  border-radius: 50%;
+  max-width: 100%;
+  max-height: 2rem;
+}
+.footer-desc > .ftr-cr{
+  text-align:center;
+  padding:0.2rem 0rem;
+  background-color:#0c314c;
+}
+
+.footer-desc > .ftr-cr > h6{
+  display:inline;
+}
+
+.footer-desc > .ftr-cr:hover *{
+   color:#ffffff !important;
+}
 /*END FOOTER SECTION*/
 
