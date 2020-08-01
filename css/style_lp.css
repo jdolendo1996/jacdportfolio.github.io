@@ -19,7 +19,7 @@ html, body{
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows:  min-content max-content auto;
   grid-template-areas: 
-  "a b b b b b b c"
+  "b b b b b b b b"
   "d e e e e e e f"
   "g h h h h h i i"
   "j k k k k k k l"
@@ -30,6 +30,7 @@ html, body{
 
 .lp-about-box > nav {
   grid-area:b;
+  padding: 0.5% 12%;
   -webkit-transition: all 0.6s ease-out;
   -moz-transition: all 0.6s ease-out;
   -o-transition: all 0.6s ease-out;
