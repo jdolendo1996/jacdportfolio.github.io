@@ -12,47 +12,74 @@ html, body{
    background-position: center;
    background-size: cover;
    height:100vh;
-   padding: 3vh 12vh 0vh 19vh;
+
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows:  min-content max-content auto;
+  grid-template-areas: 
+  "a b b b b b b c"
+  "d e e e e e e f"
+  "g h h h h h i i"
+  "j k k k k k k l"
+  "m n n n o o o o"
+  "p q q q q q q q";
+
 }
-  /*FOR NAVIGATIONAL BAR*/
-.bg-dark { 
-    background-color: transparent !important;  
+
+.lp-about-box > nav {
+  grid-area:b;
 }
-.btn-link {
-    color: #fff;
+
+.lp-about-box > nav  > a > img{
+  height:50px;
+  width:50px;
+  border-radius: 50%;
 }
-.nav-item {
-  padding-right: 5vh;
+
+.lp-about-box > nav  > div.navbar-collapse > ul > li a:hover{
+  color:#ffffff !important;
 }
-.nav-link-end {
-  padding-right: 15vh !important;
+
+.lp-about-box > h3, .lp-about-box > h1, .lp-about-box > p {
+  color:#ffffff;
 }
-.navbar-nav .active > .nav-link {
-     border-bottom: 5px solid #5bc0eb;
+.lp-about-box > h3{
+  grid-area:h;
+  align-self: end;
 }
-/*FOR SCROLLING*/
-.sticky {
-  background-color: #04315f!important;
+
+.lp-about-box > h1{
+  grid-area:k;
+  align-self:center;
+  font-weight:bold;
 }
-/*END NAVIGATIONAL BAR*/
-.lp-about-box > .info-box {
-   text-align: left;
-   color: white;
-   padding-top: 10vh; 
+.lp-about-box > .about-desc {
+  grid-area:n;
+  font-family: 'Nunito', sans-serif;
+  color:#ffffff;
 }
-.lp-about-box > .info-box > .row > .info-dtls > .title{
-   font-size: 3.5rem;
-}
-.lp-about-box > .info-box > .row > .info-dtls > .sub-title{
-   color:white;
-   font-size:18px;
-   font-family: 'Nunito', sans-serif;
-}
-#btn-cv{
-  border-radius: 2.3rem !important;
-  background-color: white;
+
+.lp-about-box > .about-desc > .btn-sm{
+  font-weight:700;
+  border-radius:300px;
+  background-color:#ffffff;
+  border-color:#ffffff;
   color:black;
+  padding:0.5rem 1.5rem;
 }
+.lp-about-box > .about-desc > .btn-sm:hover{
+  color:white;
+  background-color:black;
+  border-color:black;
+
+}
+
+
+
+
+
+
+/*font-family: 'Nunito', sans-serif;*/
 /*END ABOUT SECTION*/
 
 
