@@ -6,6 +6,12 @@ html, body{
   padding: 0;
   scroll-behavior: smooth;
 }
+.animate__animated{
+  -webkit-animation-duration: 1s !important;
+  -moz-animation-duration: 1s !important;
+  -o-animation-duration: 1s !important;
+  animation-duration: 1s !important;
+}
 
 /*ABOUT SECTION*/
 .lp-about-box{
@@ -100,7 +106,6 @@ html, body{
   height:auto;
   padding: 5% 10% 5%;
 }
-
 .skills-box > .skills-info{
   display:flex;
   flex-wrap:wrap;
@@ -111,6 +116,11 @@ html, body{
   text-justify: inter-word;
   padding-bottom:2%;
 }
+
+.skills-box  > nav  > .collapse  > ul li{
+  cursor:pointer;
+}
+
 .skills{
   display:grid;
   grid-gap:20px;

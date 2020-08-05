@@ -6,6 +6,10 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Nunito&display=swap" rel="stylesheet">
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  	/>
 	<link rel="stylesheet" type="text/css" href="css/style_lp.css">
 </head>
 <body>
@@ -55,7 +59,7 @@
 
 <!--SKILLS SECTION-->
 <div id="lp_skills" class="skills-box">
-	<div class="skills-info">
+	<div class="skills-info animate__animated effect-fid">
 		<h2>Skills</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -65,27 +69,29 @@
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	</div>
 
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light animate__animated
+	effect-fid">
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_skills" aria-controls="nav_skills" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
 		  <div class="collapse navbar-collapse" id="nav_skills">
 		    <ul class="navbar-nav mx-auto">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="#">Technical <span class="sr-only">(current)</span></a>
+		      <li class="nav-item px-3 s-tech active">
+		        <a class="nav-link">Technical</a>
 		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Personal</a>
+		      <li class="nav-item s-personal px-3">
+		        <a class="nav-link">Personal</a>
 		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Others</a>
+		      <li class="nav-item s-others px-3">
+		        <a class="nav-link">Others</a>
 		      </li>
 		    </ul>
 		  </div>
 	</nav>
   
 	<div class="skills">
-       <div class="skill-type">
+	   <!--START TECHNICAL SKILLS-->
+       <div class="s-tech skill-type animate__animated effect-fil">
        		<img src="images/html_icon.png" alt="css-icon">
        		<div class="skill-desc">
 	       		<h6 class="skill-name">HTML</h6>
@@ -96,7 +102,7 @@
 			 	</div>
 			</div>
        </div>
-       <div class="skill-type">
+       <div class="s-tech skill-type animate__animated effect-fir">
        		<img src="images/css_icon.png" alt="css-icon">
        		<div class="skill-desc">
 	       		<h6 class="skill-name">CSS/CSS3</h6>
@@ -107,7 +113,7 @@
 			 	</div>
 			</div>
        </div>
-       <div class="skill-type">
+       <div class="s-tech skill-type animate__animated effect-fil">
        		<img src="images/js_icon.png" alt="css-icon">
        		<div class="skill-desc">
 	       		<h6 class="skill-name">JS</h6>
@@ -119,7 +125,7 @@
 			</div>
        </div>
       
-       <div class="skill-type">
+       <div class="s-tech skill-type animate__animated effect-fir">
        		<img src="images/php_icon.png" alt="css-icon">
        		<div class="skill-desc">
 	       		<h6 class="skill-name">PHP</h6>
@@ -131,7 +137,7 @@
 			</div>
        </div>
 
-       <div class="skill-type">
+       <div class="s-tech skill-type animate__animated effect-fil">
        		<img src="images/ci_icon.png" alt="css-icon">
        		<div class="skill-desc">
 	       		<h6 class="skill-name">MVC CodeIgniter</h6>
@@ -142,7 +148,7 @@
 			 	</div>
 			</div>
        </div>
-       <div class="skill-type">
+       <div class="s-tech skill-type animate__animated effect-fir">
        		<img src="images/mysql_icon.png" alt="css-icon">
        		<div class="skill-desc">
 	       		<h6 class="skill-name">MySQL</h6>
@@ -154,7 +160,7 @@
 			</div>
        </div>
       
-       <div class="skill-type">
+       <div class="s-tech skill-type animate__animated effect-fil">
        		<img src="images/bracket_icon.png" alt="css-icon">
        		<div class="skill-desc">
 	       		<h6 class="skill-name">Jquery / AJAX</h6>
@@ -165,7 +171,7 @@
 			 	</div>
 			</div>
        </div>
-       <div class="skill-type">
+       <div class="s-tech skill-type animate__animated effect-fir">
        		<img src="images/bootstrap_icon.png" alt="css-icon">
        		<div class="skill-desc">
 	       		<h6 class="skill-name">Bootstrap CSS Framework</h6>
@@ -176,7 +182,7 @@
 			 	</div>
 			</div>
        </div>
-       <div class="skill-type">
+       <div class="s-tech skill-type animate__animated effect-fil">
        		<img src="images/mat_icon.png" alt="css-icon">
        		<div class="skill-desc">
 	       		<h6 class="skill-name">Materialize CSS Framework</h6>
@@ -187,7 +193,7 @@
 			 	</div>
 			</div>
        </div>
-       <div class="skill-type">
+       <div class="s-tech skill-type animate__animated effect-fir">
        		<img src="images/react_icon.png" alt="css-icon">
        		<div class="skill-desc">
 	       		<h6 class="skill-name">React JS</h6>
@@ -198,7 +204,7 @@
 			 	</div>
 			</div>
        </div>
-       <div class="skill-type">
+       <div class="s-tech skill-type animate__animated effect-fil">
        		<img src="images/bracket_icon.png" alt="css-icon">
        		<div class="skill-desc">
 	       		<h6 class="skill-name">Node JS</h6>
@@ -209,7 +215,83 @@
 			 	</div>
 			</div>
        </div>
+       <!--END TECHNICAL SKILLS-->
+       
+       <!--START PERSONAL SKILLS-->
 
+       <div class="s-personal skill-type animate__animated effect-fil d-none">
+       		<img src="images/bracket_icon.png" alt="css-icon">
+       		<div class="skill-desc">
+	       		<h6 class="skill-name">Problem-solving Skills</h6>
+	       		<h6 class="skill-perc">80%</h6>
+       		</div>
+       		<div class="progress">
+			 	<div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+			 	</div>
+			</div>
+       </div>
+
+       <div class="s-personal skill-type animate__animated effect-fir d-none">
+       		<img src="images/bracket_icon.png" alt="Communication Icon">
+       		<div class="skill-desc">
+	       		<h6 class="skill-name">Communication</h6>
+	       		<h6 class="skill-perc">80%</h6>
+       		</div>
+       		<div class="progress">
+			 	<div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+			 	</div>
+			</div>
+       </div>
+
+       <div class="s-personal skill-type animate__animated effect-fil d-none">
+       		<img src="images/bracket_icon.png" alt="Ability to work under pressure Icon">
+       		<div class="skill-desc">
+	       		<h6 class="skill-name">Ability to work under pressure</h6>
+	       		<h6 class="skill-perc">70%</h6>
+       		</div>
+       		<div class="progress">
+			 	<div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+			 	</div>
+			</div>
+       </div>
+
+       <div class="s-personal skill-type animate__animated effect-fir d-none">
+       		<img src="images/bracket_icon.png" alt="Decision Making Icon">
+       		<div class="skill-desc">
+	       		<h6 class="skill-name">Decision Making</h6>
+	       		<h6 class="skill-perc">70%</h6>
+       		</div>
+       		<div class="progress">
+			 	<div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+			 	</div>
+			</div>
+       </div>
+
+       <div class="s-personal skill-type animate__animated effect-fil d-none">
+       		<img src="images/bracket_icon.png" alt="Adaptability Icon">
+       		<div class="skill-desc">
+	       		<h6 class="skill-name">Adaptability</h6>
+	       		<h6 class="skill-perc">70%</h6>
+       		</div>
+       		<div class="progress">
+			 	<div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+			 	</div>
+			</div>
+       </div>
+
+       <div class="s-personal skill-type animate__animated effect-fir d-none">
+       		<img src="images/bracket_icon.png" alt="Self Motivation Icon">
+       		<div class="skill-desc">
+	       		<h6 class="skill-name">Self Motivation</h6>
+	       		<h6 class="skill-perc">80%</h6>
+       		</div>
+       		<div class="progress">
+			 	<div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+			 	</div>
+			</div>
+       </div>
+
+       <!-- END TECHINICAL SKILLS -->
 	</div>
 	
 </div>	
