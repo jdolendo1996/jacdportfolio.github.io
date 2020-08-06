@@ -30,6 +30,15 @@ $( window ).scroll(function() {
       	}else if($(this).hasClass('effect-fid')){
       		$(this).addClass('animate__fadeInDown');
       	}
+
+      	//FOR PROGRESS BAR ANIMATION
+	    if($(this).find('div.progress').length !== 0){
+	    	var p_id = $(this).find('div.progress-bar').attr('id');
+	    	var p_value = $('#' + p_id).attr('aria-valuenow');
+	    	console.log(p_id,p_value);
+	    	$('#' + p_id).css({width:p_value});
+	    }
+
       }
     });
 });

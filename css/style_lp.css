@@ -164,7 +164,14 @@ html, body{
 } 
 .skills .skill-type > div.progress > .progress-bar  {
   background-color:black !important;
-} 
+  width:0%;
+  -webkit-transition: all 3s ease-out;
+  -moz-transition: all 3s ease-out;
+  -o-transition: all 3s ease-out;
+  -ms-transition: all 3s ease-out;
+  transition: all 3s ease-out;
+}
+
 
 /*END SKILLS SECTION*/
 
